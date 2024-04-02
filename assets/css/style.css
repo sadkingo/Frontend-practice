@@ -1,0 +1,141 @@
+:root {
+  --background-gradient: linear-gradient(
+    120deg,
+    rgba(102, 93, 205, 1) 0%,
+    rgba(95, 164, 230, 1) 35%,
+    rgba(210, 171, 103, 1) 100%
+  );
+  --background-color :#141619;
+  --secandary-font-color: #e5e5e5;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: "inter", sans-serif;
+  color: white;
+}
+
+header {
+  background-color: var(--background-color);
+}
+body {
+  background-color: var(--background-color);
+}
+header a {
+  color: white;
+  text-decoration-line: none;
+  font-size: 15px;
+  text-align: center;
+}
+
+.btn {
+  outline: none;
+  background: transparent;
+  border: none;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 23px;
+  margin-left: 5vw;
+  margin-right: 5vw;
+}
+
+.menus > * {
+  margin: 12px;
+}
+.r-btns > * {
+  cursor: pointer;
+}
+.r-btns {
+  padding: 0px 35px;
+}
+.btn-color-select {
+  display: inline-flex;
+  align-items: center;
+  background: var(--background-gradient);
+  border-radius: 8px;
+  width: 16px;
+  height: 16px;
+  border: none;
+}
+main {
+  text-align: center;
+}
+
+.main-title > :first-child {
+  margin-bottom: 45px;
+}
+.main-title > :last-child,
+.main-title > :first-child {
+  font-size: 76px;
+  font-weight: 500;
+}
+
+main > p {
+  color: var(--secandary-font-color);
+  padding: 31px;
+  padding-bottom: 41px;
+  margin: auto;
+  font-size: 20px;
+  width: 40vw;
+}
+.main-btn {
+  text-transform: uppercase;
+  font-size: 19px;
+  background: var(--background-gradient);
+  border: none;
+  width: 191px;
+  height: 58px;
+}
+
+section {
+  margin: 150px;
+}
+.about-title {
+  text-align: center;
+  font-size: 56px;
+  font-weight: 400;
+  margin-bottom: 24px;
+}
+.about-section > p {
+  margin: auto;
+  color: var(--secandary-font-color);
+  padding: 31px;
+  padding-bottom: 41px;
+  font-size: 20px;
+  text-align: center;
+  width: 40vw;
+}
+
+.grid-container {
+  display: grid;
+  margin: auto;
+  width: 75vw;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+  background: var(--background-gradient);
+  box-shadow: inset -1px -1px var(--background-gradient);
+}
+.grid-column {
+  background-color: var(--background-color);
+  padding: 32px;
+}
+.grid-column-title {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 400;
+}
+.grid-column-description {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 300;
+  color: var(--secandary-font-color);
+}
+
+.grid-column:nth-child(2){
+  background:var(--background-gradient);
+}
