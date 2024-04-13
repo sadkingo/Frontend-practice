@@ -5,7 +5,7 @@
     rgba(95, 164, 230, 1) 35%,
     rgba(210, 171, 103, 1) 100%
   );
-  --background-color :#141619;
+  --background-color: #141619;
   --secandary-font-color: #e5e5e5;
 }
 
@@ -84,12 +84,19 @@ main > p {
   width: 40vw;
 }
 .main-btn {
+  cursor: pointer;
   text-transform: uppercase;
   font-size: 19px;
   background: var(--background-gradient);
-  border: none;
+  border: 1px solid var(--background-gradient);
   width: 191px;
   height: 58px;
+  opacity: 1;
+  transition: opacity 1s ease;
+}
+
+.main-btn:hover {
+  opacity: 0;
 }
 
 section {
@@ -136,6 +143,6 @@ section {
   color: var(--secandary-font-color);
 }
 
-.grid-column:hover{
-  background:var(--background-gradient);
+.grid-column:hover {
+  background: var(--background-gradient);
 }
