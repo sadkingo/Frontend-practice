@@ -83,20 +83,40 @@ main > p {
   font-size: 20px;
   width: 40vw;
 }
+.main-btn-container{
+  margin-top: 30px;
+}
 .main-btn {
+  width: 180px;
+  height: 60px;
   cursor: pointer;
-  text-transform: uppercase;
-  font-size: 19px;
   background: var(--background-gradient);
-  border: 1px solid var(--background-gradient);
-  width: 191px;
-  height: 58px;
-  opacity: 1;
-  transition: opacity 1s ease;
+  border: 1px solid #91c9ff;
+  outline: none;
+  transition: 1s ease-in-out;
 }
 
+svg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  fill: none;
+  stroke: #fff;
+  stroke-dasharray: 150 480;
+  stroke-dashoffset: 150;
+  transition: 1s ease-in-out;
+}
+.center {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+}
 .main-btn:hover {
-  opacity: 0;
+  transition: 1s ease-in-out;
+  background: #4f95da;
+}
+.main-btn:hover svg {
+  stroke-dashoffset: -480;
 }
 
 section {
